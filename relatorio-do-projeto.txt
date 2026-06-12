@@ -1,0 +1,26 @@
+Segundo Relatório para um Projeto Escolhido pelo Estudante
+
+Faça o seguinte:
+
+1. Na tabela abaixo, liste as datas, o tempo gasto e a descrição do trabalho que você realizou em seu projeto. Siga o exemplo que está na primeira linha da tabela abaixo. Inclua o tempo que você passou fazendo qualquer uma das seguintes atividades:
+a. discutindo seu projeto com seu professor, tutor ou colegas
+b. pesquisando por meio de leitura de artigos e assistindo a vídeos relevantes
+c. elaborando o design do seu projeto por meio de diagramas e outros documentos aplicáveis
+d. escrevendo código experimental
+d. escrevendo o código do seu projeto
+e. escrevendo funções de teste
+f. depurando seu código
+g. qualquer outra atividade que tenha ajudado você a concluir seu projeto
+
+=============Registro====================
+            Tempo Gasto
+   Data       (horas)   Descrição do Trabalho
+----------  ----------  -------------------------
+2026-06-10      0.5     Organizei o escopo inicial do projeto e organizei em etapas de como seria trabalhado
+2026-06-11      1.5     Iniciei o projeto no Vscode, escrevi todas as funções que seriam usadas e comecei a trabalhar na primeira função (entrada_paciente)
+2026-06-12      1.0     Finalzei a função (entrada_paciente) e comecei a escrever a proxima função (buscar_paciente)
+=========2===Registro====================
+
+
+2. No Canvas, envie este arquivo de texto preenchido, seu programa Python, seu arquivo de teste Python
+ e quaisquer arquivos de dados do projeto, como arquivos .txt e .csv, além do link para o vídeo de demonstração, se necessário.
