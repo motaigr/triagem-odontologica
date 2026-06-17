@@ -12,7 +12,11 @@ def main():
 
 def entrada_paciente():
     #solicitação de cpf para verificar se é novo ou se já teve outra consulta 
-    cpf = input("Digite o CPF do paciente (somente os números):")
+    while True:
+        cpf = input("Digite o CPF do paciente (somente os números):")
+        if cpf.isdigit():
+            break
+        print("CPF inválido, digite somente números.")
 
     paciente = busca_por_paciente(cpf)
 
@@ -47,12 +51,14 @@ def entrada_paciente():
     salvar_consulta(cpf, paciente["nome"], paciente["data_nascimento"], triagem, anamnese)
     
 
-def busca_por_paciente(cpf):
+def busca_por_paciente(cpf, caminho="pacientes.csv"):
     #responsavel por verificar se o paciente já tem cadastro, caso tenha, retornar os linha do cliente para iniciar a consulta.
     try:
-        with open("pacientes.csv", "r", encoding="utf-8") as arquivo:
+        with open(caminho, "r", encoding="utf-8") as arquivo:
             leitor = csv.reader(arquivo)
             for linha in leitor:
+                if len(linha) == 0 or linha[0] == "cpf":
+                    continue
                 if linha[0] == cpf:
                     return {
                         "cpf": linha[0],

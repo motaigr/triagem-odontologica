@@ -1,2 +1,5 @@
-55566677700,fulano silva,02/02/2000,12/06/2026 23:19:28,não,sim,não,não,não,não,não,não,não,Inchaço gengiva
-55566677700,fulano silva,02/02/2000,12/06/2026 23:22:21,sim,não,sim,sim,não,não,não,não,não,Dores no dente
+cpf,nome,data_nascimento,data_consulta,dor,inchaco,trauma,sensibilidade,sangramento,doenca,medicamento,alergia,gestante,motivo
+
+12345678901,Rodolfo pereira,09/01/2000,16/06/2026 23:26:51,não,sim,não,sim,não,não,não,não,não,checkup
+
+12345678901,Rodolfo pereira,09/01/2000,16/06/2026 23:52:32,sim,não,sim,não,sim,não,não,não,não,checkup

@@ -18,13 +18,13 @@ g. qualquer outra atividade que tenha ajudado você a concluir seu projeto
 ----------  ----------  -------------------------
 2026-06-10      0.5     Organizei o escopo inicial do projeto e organizei em etapas de como seria trabalhado
 2026-06-11      1.5     Iniciei o projeto no Vscode, escrevi todas as funções que seriam usadas e comecei a trabalhar na primeira função (entrada_paciente)
-2026-06-12      1.0     Finalzei a função (entrada_paciente) e comecei a escrever a proxima função (buscar_paciente)
+2026-06-12      1.0     Finalizei a função (entrada_paciente) e comecei a escrever a proxima função (buscar_paciente)
 2026-06-12      3.0     Desenvolvimento das funções busca_por_paciente, comparar_respostas e salvar_consulta. Teste manual do fluxo completo
 2026-06-13      0.5     Teste manual de funções
 2026-06-13      1.5     Refinar codigo, verificar melhorias lendo documentação para testes    
-2026-06-15      1.5     R
-2026-06-16      1.5     R
-2026-06-17      1.5     R
+2026-06-15      1.5     Escrevi duas funções de teste e rodei elas (test_entrada_paciente, test_busca_por_paciente)
+2026-06-16      2.0     Finalizando a função de teste de test_salvar_consulta e escrevendo a função de test_busca_por_paciente
+2026-06-16      0.5     Rodei testes e corrigi possiveis erros
 ============Registro====================
 
 
