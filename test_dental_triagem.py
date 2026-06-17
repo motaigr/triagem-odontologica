@@ -1,7 +1,7 @@
 from datetime import datetime
 import os
 
-from dental_triagem import comparar_respostas, salvar_consulta, busca_por_paciente
+from dental_triagem import comparar_respostas, salvar_consulta, busca_por_paciente, perguntar_sim_nao, perguntar_data
 
 #python -m pytest test_dental_triagem.py -v
 
@@ -56,3 +56,34 @@ def test_busca_por_paciente(tmp_path):
     
     assert resultado is not None
     assert resultado["nome"] == "João Silva"
+
+def test_perguntar_sim_nao(monkeypatch):
+    # monkeypatch é uma fixture do pytest que substitui o input() do usuário
+    # permitindo testar funções interativas sem precisar digitar manualmente
+    
+    # Simula a entrada do usuário
+    monkeypatch.setattr('builtins.input', lambda _: "sim")
+    resposta = perguntar_sim_nao("Está sentindo dor?")
+    assert resposta == "sim"
+
+    monkeypatch.setattr('builtins.input', lambda _: "não")
+    resposta = perguntar_sim_nao("Está sentindo dor?")
+    assert resposta == "não"
+
+    # Testa entrada inválida seguida de válida
+    inputs = iter(["talvez", "sim"])
+    monkeypatch.setattr('builtins.input', lambda _: next(inputs))
+    resposta = perguntar_sim_nao("Está sentindo dor?")
+    assert resposta == "sim"
+
+def test_perguntar_data(monkeypatch):
+    # Simula a entrada do usuário
+    monkeypatch.setattr('builtins.input', lambda _: "15/08/1995")
+    data = perguntar_data("Digite a data de nascimento:")
+    assert data == "15/08/1995"
+
+    # Testa entrada inválida seguida de válida
+    inputs = iter(["31-12-2000", "30/02/2020", "01/01/2000"])
+    monkeypatch.setattr('builtins.input', lambda _: next(inputs))
+    data = perguntar_data("Digite a data de nascimento:")
+    assert data == "01/01/2000"
